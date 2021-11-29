@@ -489,6 +489,19 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form">
+          <h3 class="footer-form-title">Подпишитесь на рассылку</h3>
+          <div class="subscribe">
+            <label for="mail"></label>
+            <input type="email" name="mail" id="mail" placeholder="E-mail" />
+            <button class="button-form" type="submit">
+              Подписаться
+              <svg class="button-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -498,6 +511,20 @@
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <form action="" class="modal-form">
+          <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <label for="name">Имя</label>
+          <input type="text" name="name" id="name" placeholder="Игорь Мельник" autofocus />
+          <label for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel" placeholder="+380..-...-..-.." />
+          <label for="mail">Почта</label>
+          <input type="email" name="mail" id="mail" placeholder="qwe@com.ua" />
+          <label for="comment">Комментарий</label>
+          <textarea name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+          <label for="overlay">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+          <input type="checkbox" name="overlay" id="overlay" />
+          <button type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
