@@ -725,7 +725,7 @@ ul {
 .modal {
   width: 528px;
   min-height: 581px;
-  /* padding: 40px; */
+  padding: 40px;
   background-color: var(--fourth-tittle-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -760,9 +760,99 @@ ul {
   align-items: center;
   justify-content: center;
 }
-
+.modal-title {
+  margin-bottom: 12px;
+}
 .is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
+}
+.form-input {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 11px 42px;
+}
+.form-input.textarea {
+  padding: 12px 16px;
+}
+.form-label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+}
+.for-position-icon {
+  position: relative;
+}
+.form-icon {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 11px;
+  transform: translateY(-50%);
+}
+.checkbox {
+  display: flex;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.form-field > .checkbox {
+  padding-left: 12px;
+}
+.checkbox > .checkbox-input {
+  width: 20px;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  position: absolute;
+}
+
+.chekbox-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+}
+.checkbox-input:checked + .chekbox-icon {
+  background-color: var(--main-title-color);
+}
+.chekbox-link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  /* text-decoration-line: underline; */
+  color: var(--main-title-color);
+}
+.form-button {
+  background-color: var(--main-title-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  padding: 10px 55px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--fourth-tittle-color);
 }
