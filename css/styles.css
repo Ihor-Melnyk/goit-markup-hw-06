@@ -869,20 +869,24 @@ textarea[placeholder='Введите текст'] {
   appearance: none;
   position: absolute;
 }
-
+.chekbox-item {
+  background-origin: border-box;
+  border: 2px solid var(--second-title-color);
+  border-radius: 2px;
+}
 .chekbox-icon {
   display: inline-block;
-  width: 16px;
-  height: 15px;
+  align-items: center;
+
   margin-right: 8.38px;
   border: 2px solid var(--second-title-color);
   border-radius: 2px;
 }
-.checkbox-input:checked + .chekbox-icon {
+.checkbox-input:checked + .chekbox-item {
   border-color: var(--main-title-color);
-  background-image: url('../images/check-full.svg');
   background-color: var(--main-title-color);
-  background-size: contain;
+  color: green;
+  /* background-size: contain; */
   background-origin: border-box;
 }
 .chekbox-link {
@@ -910,4 +914,30 @@ textarea[placeholder='Введите текст'] {
   letter-spacing: 0.06em;
 
   color: var(--fourth-tittle-color);
+}
+
+/* тест чекбокса */
+.test-input {
+}
+
+.test-span {
+  /* display: inline-block;
+  fill: #188ce8;
+  background-color: tomato;
+  border: 2px solid black;
+  width: 16px;
+  height: 15px; */
+}
+.test-chekbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  box-sizing: border-box;
+  background-color: tomato;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+.test-input:checked + .test-chekbox-icon /*.test-span */ {
+  fill: white;
+  background-color: #188ce8;
 }

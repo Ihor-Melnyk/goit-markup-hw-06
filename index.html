@@ -592,18 +592,34 @@
           <div class="form-field">
             <label class="checkbox">
               <input class="checkbox-input" type="checkbox" name="overlay" />
-              <span class="chekbox-icon"></span>
-              Соглашаюсь с рассылкой и принимаю&nbsp;
-              <a
-                class="chekbox-link link"
-                target="_blank"
-                href="./doc/Договор_об_оказании_услуг.docx"
-              >
-                Условия договора</a
-              >
+              <svg class="icon-item chekbox-item" width="16" height="15">
+                <use href="./images/symbol-defs.svg#icon-check"></use>
+              </svg>
+              <span class="chekbox-icon">
+                Соглашаюсь с рассылкой и принимаю&nbsp;
+                <a
+                  class="chekbox-link link"
+                  target="_blank"
+                  href="./doc/Договор_об_оказании_услуг.docx"
+                >
+                  Условия договора</a
+                >
+              </span>
             </label>
           </div>
           <button class="form-button" type="submit">Отправить</button>
+          <!-- тест чекбокса -->
+          <label class="test-label">
+            <input class="test-input" type="checkbox" name="overlay" />
+            <svg class="test-chekbox-icon">
+              <use href="./images/symbol-defs.svg#icon-check"></use>
+            </svg>
+            <span class="test-span"> </span>
+            Соглашаюсь с рассылкой и принимаю&nbsp;
+            <a class="" target="_blank" href="./doc/Договор_об_оказании_услуг.docx">
+              Условия договора</a
+            >
+          </label>
         </form>
       </div>
     </div>
