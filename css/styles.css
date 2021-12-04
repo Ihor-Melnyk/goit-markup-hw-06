@@ -796,7 +796,6 @@ ul {
 .form-input:focus,
 .form-input:hover {
   border: 1px solid var(--main-title-color);
-
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -823,7 +822,6 @@ ul {
   resize: none;
 
   font-weight: normal;
-  /* font-size: 16px; */
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: #000000;
@@ -921,6 +919,5 @@ textarea[placeholder='Введите текст'] {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-
   color: var(--fourth-tittle-color);
 }
